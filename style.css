@@ -1,0 +1,126 @@
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+::root{
+  font-size:62.5%;
+}
+#showcase{
+  background-image:url(me.jpg);
+  background-size:cover;
+  height:100vh;
+  background-position:center center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  flex-direction:column;
+  color:#926239;
+}
+#showcase > h1{
+  font-size:4.2rem;
+  line-height: 1.2;
+}
+#showcase > p{
+  font-size:1.8rem;
+}
+#showcase a{
+  color:#926239;
+  padding:0.25em;
+  font-size:1.8rem;
+  border:1px solid #926239;
+  border-radius:7px;
+  margin-top:1.0rem;
+}
+#showcase a:hover{
+  background-color: #926239;
+  color:#ffffff;
+
+}
+article.a1{
+  
+  background-color:#926239;
+  color:#ffffff;
+}
+article.a1 div{
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  text-align:center;
+  font-size:1.2rem;
+}
+article.a2{
+   
+  background-color:#ffffff;
+  color:#926239;
+}
+article.a2 div{
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  text-align:center;
+  font-size:1.2rem;
+}
+footer{
+  background-color:#926239 ;
+}
+footer > div{
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+}
+div.card{
+  display:flex;
+  flex-direction:row;
+}
+.card__1, .card__3{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    text-align:center;
+    font-size:1.2rem;
+    background-color:#926239;
+    color:#ffffff;
+  }
+  .card__2{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    text-align:center;
+    font-size:1.2rem;
+    background-color:#ffffff !important;
+    color:#926239 !important;
+  }
+  div.container{
+    display:flex;
+    justify-content:space-around;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+  }
+@media screen and (max-width:362px){
+  ::root{
+    font-size:50%;
+  }
+  div.card{
+    display:flex;
+    flex-direction:column;
+  }
+  .card__2{
+    width:100%;
+  }
+  div.container div + div{
+    border-left:1px solid #ffffff;
+    padding-left:15px;
+  }
+  div.container div:first-child{
+    padding-right:10px;
+  }
+}
